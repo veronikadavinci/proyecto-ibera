@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sección sobre rewilding en Iberá, especies nativas reintroducidas y material audiovisual sobre restauración ecológica.">
+  <title>Proyecto Iberá | Rewilding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../estilos/base.css">
+  <link rel="stylesheet" href="../estilos/pages.css">
+</head>
+
+<body id="top" class="page-rewilding">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="../index.html">Proyecto Iberá</a>
+
+        <input class="nav-control" type="checkbox" id="navMenuToggle">
+        <label class="nav-toggle" for="navMenuToggle">
+          <span class="nav-toggle-text">Abrir menú</span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </label>
+
+        <nav class="site-nav" id="siteNav" aria-label="Navegación principal">
+          <ul>
+            <li><a class="nav-link nav-intro" href="../index.html">Introducción</a></li>
+            <li><a class="nav-link nav-gran-parque" href="gran-parque.html">Gran Parque</a></li>
+            <li><a class="nav-link nav-rewilding" aria-current="page" href="rewilding.html">Rewilding</a></li>
+            <li><a class="nav-link nav-nucleos" href="nucleos.html">Núcleos</a></li>
+            <li><a class="nav-link nav-linea-tiempo" href="linea-tiempo.html">Línea de tiempo</a></li>
+            <li><a class="nav-link nav-newsletter" href="newsletter.html">Newsletter</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="page-hero banner rewilding-hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <p class="hero-kicker"><strong>Restauración ecológica</strong></p>
+          <h1>Rewilding Iberá</h1>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main id="contenido">
+    <div class="content-section">
+      <div class="container">
+        <div class="section-copy">
+          <p class="section-kicker"><strong>Rewilding y especies</strong></p>
+          <p class="section-lead">
+            Desde el año <strong>2007</strong>, el Proyecto Iberá trabaja en la recuperación de especies nativas que
+            desaparecieron de Corrientes o redujeron gravemente sus poblaciones.
+          </p>
+
+          <p>
+            A través del <strong><span lang="en">rewilding</span></strong>, se busca restaurar funciones ecológicas
+            clave y devolver al humedal parte de la fauna que históricamente formó parte de su equilibrio natural.
+          </p>
+
+          <p>
+            Cada <strong>especie</strong> cumple un rol distinto: algunas dispersan semillas, otras controlan poblaciones de peces,
+            insectos o pequeños vertebrados, y otras ayudan a mantener dinámicas naturales del paisaje.
+          </p>
+
+          <p class="section-kicker"><strong>Las especies</strong> con las que trabaja el Proyecto Iberá</p>
+        </div>
+
+        <section class="section-copy compact-copy video-section">
+          <p class="section-kicker"><strong>Video recomendado</strong></p>
+          <h2>Una mirada audiovisual sobre Iberá</h2>
+          <p>
+            Este video muestra el valor internacional del proceso de restauración y ayuda a entender por qué Iberá es un
+            caso importante dentro de las experiencias de <span lang="en">rewilding</span>.
+          </p>
+
+          <!-- El iframe usa srcdoc para mostrar thumbnail y cargar YouTube solo al hacer click. -->
+          <div class="iframe-wrap video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/QJ531EY8uo8"
+              srcdoc='
+                <style>
+                  * { box-sizing: border-box; }
+                  body { margin: 0; background: #1f2523; font-family: Arial, Helvetica, sans-serif; }
+                  a { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; color: #fff; text-decoration: none; }
+                  img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+                  a::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,20,19,0.18), rgba(13,20,19,0.58)); }
+                  span { position: relative; z-index: 1; }
+                  .play { width: 74px; height: 74px; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.88); border-radius: 50%; background: rgba(31,37,35,0.42); font-size: 2rem; line-height: 1; }
+                  .label { position: absolute; left: 28px; bottom: 26px; max-width: 70%; font-size: 1rem; font-weight: 700; line-height: 1.4; }
+                </style>
+                <a href="https://www.youtube.com/embed/QJ531EY8uo8?autoplay=1" aria-label="Reproducir Last Wild Places: Iberá">
+                  <img src="https://img.youtube.com/vi/QJ531EY8uo8/hqdefault.jpg" alt="Vista previa del video Last Wild Places: Iberá">
+                  <span class="play">▶</span>
+                  <span class="label">Last Wild Places: Iberá</span>
+                </a>'
+              title="Last Wild Places: Iberá"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </section>
+
+        <section class="species-list" aria-label="Especies reintroducidas o vinculadas al Proyecto Iberá">
+          <article class="species-item">
+            <figure class="species-image">
+              <img src="../img/yaguarete.jpg" alt="Yaguareté" loading="lazy" decoding="async">
+            </figure>
+            <div class="species-copy">
+              <h2>Yaguareté</h2>
+              <p>
+                El <strong>yaguareté</strong> (<i lang="la">Panthera onca</i>) es el mayor felino de América y uno de
+                los mamíferos más amenazados de Argentina. La especie se extinguió de la provincia de Corrientes a
+                mediados del siglo XX debido a la <em>cacería</em>, la modificación del ambiente y la pérdida de sus
+                presas naturales.
+              </p>
+            </div>
+          </article>
+
+          <article class="species-item">
+            <figure class="species-image">
+              <img src="../img/nutria-gigante.jpg" alt="Nutria gigante o lobo gargantilla" loading="lazy" decoding="async">
+            </figure>
+            <div class="species-copy">
+              <h2>Nutria gigante</h2>
+              <p>
+                El <strong>lobo gargantilla</strong> (<i lang="la">Pteronura brasiliensis</i>), o nutria gigante, es la
+                especie de nutria más grande del mundo. Fue <em>depredador tope</em> de los ecosistemas acuáticos de
+                Corrientes, donde se alimentó de peces y yacarés.
+              </p>
+            </div>
+          </article>
+
+          <article class="species-item">
+            <figure class="species-image">
+              <img src="../img/ocelote.jpg" alt="Ocelote entre vegetación" loading="lazy" decoding="async">
+            </figure>
+            <div class="species-copy">
+              <h2>Ocelote</h2>
+              <p>
+                El <strong>ocelote</strong> (<i lang="la">Leopardus pardalis</i>) es el más grande de los pequeños
+                felinos manchados de América. Esta especie, considerada <em>vulnerable a la extinción</em>, habita
+                actualmente desde el sur de Texas hasta el norte de Argentina.
+              </p>
+            </div>
+          </article>
+
+          <article class="species-item">
+            <figure class="species-image">
+              <img src="../img/oso-hormiguero.jpg" alt="Oso hormiguero gigante" loading="lazy" decoding="async">
+            </figure>
+            <div class="species-copy">
+              <h2>Oso hormiguero gigante</h2>
+              <p>
+                El <strong>oso hormiguero</strong> o yurumí (<i lang="la">Myrmecophaga tridactyla</i>) posee un hocico
+                alargado y una extensa lengua con la cual se alimenta de hormigas y termitas. Se extinguió en Corrientes
+                a mediados del siglo XX.
+              </p>
+            </div>
+          </article>
+
+          <article class="species-item">
+            <figure class="species-image">
+              <img src="../img/venado-pampas.jpg" alt="Venado de las pampas en un pastizal" loading="lazy" decoding="async">
+            </figure>
+            <div class="species-copy">
+              <h2>Venado de las pampas</h2>
+              <p>
+                El <strong>venado de las pampas</strong> (<i lang="la">Ozotoceros bezoarticus</i>) es un herbívoro que
+                supo ser muy abundante en los pastizales argentinos. Debido a la <em>caza</em>, la destrucción del
+                ambiente y enfermedades del ganado, sus números cayeron en forma alarmante.
+              </p>
+            </div>
+          </article>
+
+          <article class="species-item">
+            <figure class="species-image">
+              <img src="../img/pecari.jpg" alt="Pecarí de collar" loading="lazy" decoding="async">
+            </figure>
+            <div class="species-copy">
+              <h2>Pecarí de collar</h2>
+              <p>
+                El <strong>pecarí de collar</strong> (<i lang="la">Pecari tajacu</i>) cumple un rol importante en la
+                <em>dispersión de frutos y semillas</em> de plantas nativas. Se extinguió en amplios sectores del centro
+                y norte del país, incluyendo la provincia de Corrientes.
+              </p>
+            </div>
+          </article>
+
+          <article class="species-item">
+            <figure class="species-image">
+              <img src="../img/guacamayo-rojo.jpg" alt="Guacamayo rojo" loading="lazy" decoding="async">
+            </figure>
+            <div class="species-copy">
+              <h2>Guacamayo rojo</h2>
+              <p>
+                El <strong>guacamayo rojo</strong> (<i lang="la">Ara chloropterus</i>) es un ave de plumaje vistoso que
+                solía habitar las selvas del noreste de Argentina. Es frugívora, por lo que ayuda a dispersar frutos y
+                semillas de especies nativas.
+              </p>
+            </div>
+          </article>
+
+          <article class="species-item">
+            <figure class="species-image">
+              <img src="../img/muitu.jpg" alt="Muitú" loading="lazy" decoding="async">
+            </figure>
+            <div class="species-copy">
+              <h2>Muitú</h2>
+              <p>
+                El <strong>muitú</strong> (<i lang="la">Crax fasciolata</i>) es el ave galliforme más grande de
+                Argentina. Debido a la <em>caza</em> y a la modificación de las selvas donde vivía, desapareció de las
+                provincias de Santa Fe, Corrientes y Misiones.
+              </p>
+            </div>
+          </article>
+
+          <article class="species-item">
+            <figure class="species-image">
+              <img src="../img/chuna.jpg" alt="Chuña de patas rojas" loading="lazy" decoding="async">
+            </figure>
+            <div class="species-copy">
+              <h2>Chuña de patas rojas</h2>
+              <p>
+                La <strong>chuña de patas rojas</strong> (<i lang="la">Seriema cristata</i>) es un ave caminadora de
+                sectores abiertos de las regiones chaqueña y del espinal. Cumple una función de <em>control de
+                poblaciones</em> porque se alimenta de insectos y pequeños vertebrados.
+              </p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-box">
+      <figure class="footer-profile">
+        <img src="../img/foto.jpg" alt="Foto de Veronika Podkolzina" loading="lazy" decoding="async">
+      </figure>
+
+      <div class="footer-info">
+        <p class="section-kicker"><strong>Datos de la alumna</strong></p>
+        <p class="footer-name"><strong>Veronika Podkolzina</strong></p>
+        <p><strong>Edad:</strong> 28</p>
+        <p><strong>Correo electrónico:</strong> veronika.podkolzina@davinci.edu.ar</p>
+      </div>
+
+      <div class="footer-sources">
+        <p class="section-kicker"><strong>Fuentes consultadas</strong></p>
+        <p class="footer-note"><strong>Créditos:</strong> contenido, imágenes y multimedia consultados para construir el sitio.</p>
+        <ul class="footer-links">
+          <li><a href="https://rewildingargentina.org/proyecto-ibera/" target="_blank" rel="noopener"><cite>Rewilding Argentina - Proyecto Iberá</cite></a></li>
+          <li><a href="https://parqueibera.gob.ar" target="_blank" rel="noopener"><cite>Parque Iberá</cite></a></li>
+          <li><a href="https://www.argentina.gob.ar/parquesnacionales/ibera" target="_blank" rel="noopener"><cite>Parques Nacionales - Iberá</cite></a></li>
+          <li><a href="https://www.youtube.com/watch?v=QJ531EY8uo8" target="_blank" rel="noopener"><cite>National Geographic - Last Wild Places: Iberá</cite></a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/Category:Esteros_del_Iber%C3%A1" target="_blank" rel="noopener"><cite>Wikimedia Commons - Esteros del Iberá</cite></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-pages">
+        <p class="section-kicker"><strong>Páginas del sitio</strong></p>
+        <ul class="footer-links">
+          <li><a href="404.html">Error 404</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Volver al inicio">↑</a>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

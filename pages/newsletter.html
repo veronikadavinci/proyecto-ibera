@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de suscripción al newsletter del Proyecto Iberá para recibir novedades sobre fauna, conservación y turismo de naturaleza.">
+  <title>Proyecto Iberá | Newsletter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../estilos/base.css">
+  <link rel="stylesheet" href="../estilos/pages.css">
+  <link rel="stylesheet" href="../estilos/newsletter.css">
+</head>
+
+<body id="top" class="page-newsletter">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="../index.html">Proyecto Iberá</a>
+
+        <input class="nav-control" type="checkbox" id="navMenuToggle">
+        <label class="nav-toggle" for="navMenuToggle">
+          <span class="nav-toggle-text">Abrir menú</span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </label>
+
+        <nav class="site-nav" id="siteNav" aria-label="Navegación principal">
+          <ul>
+            <li><a class="nav-link nav-intro" href="../index.html">Introducción</a></li>
+            <li><a class="nav-link nav-gran-parque" href="gran-parque.html">Gran Parque</a></li>
+            <li><a class="nav-link nav-rewilding" href="rewilding.html">Rewilding</a></li>
+            <li><a class="nav-link nav-nucleos" href="nucleos.html">Núcleos</a></li>
+            <li><a class="nav-link nav-linea-tiempo" href="linea-tiempo.html">Línea de tiempo</a></li>
+            <li><a class="nav-link nav-newsletter" aria-current="page" href="newsletter.html">Newsletter</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="page-hero banner newsletter-hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <p class="hero-kicker"><strong>Contacto y suscripción</strong></p>
+          <h1>Newsletter Iberá</h1>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main id="contenido">
+    <div class="content-section">
+      <div class="container">
+        <div class="newsletter-intro">
+          <article class="section-copy newsletter-copy">
+            <p class="section-kicker"><strong>Boletín del proyecto</strong></p>
+            <h2>Historias del humedal, avances de conservación y agenda de naturaleza</h2>
+            <p class="section-lead">
+              Un resumen periódico para seguir de cerca lo que sucede en <strong>Iberá</strong>: nuevas liberaciones, monitoreos de
+              fauna, experiencias en los portales y acciones que fortalecen la restauración ecológica del territorio.
+            </p>
+
+            <p>
+              La <strong>newsletter</strong> reúne contenidos breves, claros y seleccionados para quienes quieren conocer el proyecto
+              más allá de una visita: investigadores, viajeros, estudiantes y personas interesadas en la conservación.
+            </p>
+          </article>
+
+          <figure class="newsletter-feature">
+            <img src="../img/ibera-yacare.jpg" alt="Yacaré en los Esteros del Iberá" loading="lazy" decoding="async">
+            <figcaption>Seguimiento de fauna nativa y novedades del proceso de restauración.</figcaption>
+          </figure>
+        </div>
+
+        <section class="newsletter-highlights" aria-label="Contenidos de la newsletter">
+          <article class="newsletter-card">
+            <p class="section-kicker"><strong>Fauna</strong></p>
+            <h3>Avances del rewilding</h3>
+            <p>
+              Noticias sobre <strong>especies reintroducidas</strong>, nacimientos, monitoreos y el rol de cada animal dentro del
+              equilibrio del humedal.
+            </p>
+          </article>
+
+          <article class="newsletter-card">
+            <p class="section-kicker"><strong>Territorio</strong></p>
+            <h3>Portales y paisajes</h3>
+            <p>
+              Recorridos por <strong>lagunas, pastizales y senderos</strong> que conectan la conservación con el turismo de
+              naturaleza.
+            </p>
+          </article>
+
+          <article class="newsletter-card">
+            <p class="section-kicker"><strong>Agenda</strong></p>
+            <h3>Actividades y llamados</h3>
+            <p>
+              Invitaciones, campañas, voluntariados y novedades para <strong>participar</strong> o seguir acompañando el crecimiento del
+              Proyecto Iberá.
+            </p>
+          </article>
+        </section>
+
+        <div class="newsletter-signup">
+          <article class="newsletter-panel">
+            <p class="section-kicker"><strong>Suscripción</strong></p>
+            <h2>Recibí novedades de Iberá en tu correo</h2>
+            <p>
+              Elegí tus <strong>temas de interés</strong> y la frecuencia con la que querés recibir actualizaciones. También podés dejar
+              una consulta para orientar futuras ediciones del boletín.
+            </p>
+
+            <ul class="newsletter-list">
+              <li>Información seleccionada sobre conservación y fauna nativa.</li>
+              <li>Recomendaciones para visitar el territorio con una mirada responsable.</li>
+              <li>Agenda de actividades, campañas y oportunidades de participación.</li>
+            </ul>
+          </article>
+
+          <!-- La acción lleva a gracias.html para demostrar recepción sin procesar datos reales. -->
+          <form class="newsletter-form" id="newsletterForm" action="gracias.html" method="get">
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" minlength="2" maxlength="40" pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ ]{2,40}" autocomplete="name" title="Ingresá solo letras y espacios." required>
+              </div>
+
+              <div class="form-row">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" maxlength="80" autocomplete="email" title="Ingresá un correo con formato nombre@dominio.com." required>
+              </div>
+
+              <div class="form-row">
+                <label for="edad">Edad</label>
+                <input type="text" id="edad" name="edad" inputmode="numeric" pattern="1[2-9]|[2-9][0-9]|100" maxlength="3" placeholder="28" title="Ingresá una edad entre 12 y 100.">
+              </div>
+
+              <div class="form-row">
+                <label for="interes">Tema de interés</label>
+                <select id="interes" name="interes" required>
+                  <option value="" selected disabled>Seleccioná una opción</option>
+                  <option value="fauna">Fauna nativa</option>
+                  <option value="turismo">Turismo de naturaleza</option>
+                  <option value="conservacion">Conservación</option>
+                  <option value="voluntariado">Voluntariado</option>
+                </select>
+              </div>
+            </div>
+
+            <fieldset>
+              <!-- fieldset agrupa radios relacionados y mejora la estructura semántica del formulario. -->
+              <legend>Frecuencia preferida</legend>
+              <div class="frequency-options">
+                <div class="choice-row">
+                  <input type="radio" id="frecuencia-semanal" name="frecuencia" value="semanal" required>
+                  <label for="frecuencia-semanal">Semanal</label>
+                </div>
+                <div class="choice-row">
+                  <input type="radio" id="frecuencia-mensual" name="frecuencia" value="mensual" checked>
+                  <label for="frecuencia-mensual">Mensual</label>
+                </div>
+                <div class="choice-row">
+                  <input type="radio" id="frecuencia-trimestral" name="frecuencia" value="trimestral">
+                  <label for="frecuencia-trimestral">Trimestral</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form-row">
+              <label for="mensaje">Mensaje o consulta</label>
+              <textarea id="mensaje" name="mensaje" rows="6" minlength="10" maxlength="500" placeholder="Contanos qué tema de Iberá te interesa seguir" title="Si escribís un mensaje, usá al menos 10 caracteres."></textarea>
+            </div>
+
+            <div class="choice-row accept-row">
+              <input type="checkbox" id="acepto" name="acepto" required>
+              <label for="acepto">Acepto recibir novedades sobre el Proyecto Iberá.</label>
+            </div>
+
+            <button type="submit">Enviar suscripción</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-box">
+      <figure class="footer-profile">
+        <img src="../img/foto.jpg" alt="Foto de Veronika Podkolzina" loading="lazy" decoding="async">
+      </figure>
+
+      <div class="footer-info">
+        <p class="section-kicker"><strong>Datos de la alumna</strong></p>
+        <p class="footer-name"><strong>Veronika Podkolzina</strong></p>
+        <p><strong>Edad:</strong> 28</p>
+        <p><strong>Correo electrónico:</strong> veronika.podkolzina@davinci.edu.ar</p>
+      </div>
+
+      <div class="footer-sources">
+        <p class="section-kicker"><strong>Fuentes consultadas</strong></p>
+        <p class="footer-note"><strong>Créditos:</strong> contenido, imágenes y multimedia consultados para construir el sitio.</p>
+        <ul class="footer-links">
+          <li><a href="https://rewildingargentina.org/proyecto-ibera/" target="_blank" rel="noopener"><cite>Rewilding Argentina - Proyecto Iberá</cite></a></li>
+          <li><a href="https://parqueibera.gob.ar" target="_blank" rel="noopener"><cite>Parque Iberá</cite></a></li>
+          <li><a href="https://www.argentina.gob.ar/parquesnacionales/ibera" target="_blank" rel="noopener"><cite>Parques Nacionales - Iberá</cite></a></li>
+          <li><a href="https://www.youtube.com/watch?v=QJ531EY8uo8" target="_blank" rel="noopener"><cite>National Geographic - Last Wild Places: Iberá</cite></a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/Category:Esteros_del_Iber%C3%A1" target="_blank" rel="noopener"><cite>Wikimedia Commons - Esteros del Iberá</cite></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-pages">
+        <p class="section-kicker"><strong>Páginas del sitio</strong></p>
+        <ul class="footer-links">
+          <li><a href="404.html">Error 404</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Volver al inicio">↑</a>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

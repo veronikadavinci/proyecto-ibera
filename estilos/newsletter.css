@@ -1,0 +1,464 @@
+.newsletter-intro {
+  /* La introducción de newsletter separa texto e imagen con grid y se apila en mobile. */
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.62fr);
+  gap: 48px;
+  align-items: end;
+  padding-bottom: 34px;
+  border-bottom: 1px solid var(--soft-line);
+}
+
+.newsletter-copy {
+  padding: 42px 0 0;
+}
+
+.newsletter-copy h2,
+.newsletter-panel h2 {
+  margin: 6px 0 18px;
+  color: var(--ink);
+  font-size: 2.9rem;
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.newsletter-copy .section-lead {
+  max-width: 940px;
+}
+
+.newsletter-feature {
+  margin: 42px 0 0;
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--soft-line);
+  box-shadow: var(--shadow);
+}
+
+.newsletter-feature img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.newsletter-feature img:hover {
+  filter: saturate(1.12) contrast(1.04);
+  transform: scale(1.03);
+}
+
+.newsletter-feature figcaption {
+  padding: 14px 16px 16px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.newsletter-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  padding: 34px 0 40px;
+}
+
+.newsletter-card {
+  min-width: 0;
+  padding: 26px 26px 28px;
+  background:
+    linear-gradient(180deg, rgba(247, 250, 247, 0.96), rgba(241, 245, 241, 0.94)),
+    var(--paper);
+  border: 1px solid var(--soft-line);
+  box-shadow: 0 14px 32px rgba(31, 37, 35, 0.1);
+}
+
+.newsletter-card h3 {
+  margin: 4px 0 14px;
+  color: var(--ink);
+  font-size: 1.45rem;
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.newsletter-card p:last-child {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.newsletter-signup {
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(420px, 1fr);
+  gap: 44px;
+  align-items: start;
+  padding: 38px 0 24px;
+  border-top: 1px solid var(--soft-line);
+}
+
+.newsletter-panel {
+  padding: 2px 0 0;
+}
+
+.newsletter-panel p {
+  max-width: 720px;
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.newsletter-list {
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--soft-line);
+}
+
+.newsletter-list li {
+  padding: 17px 0;
+  border-bottom: 1px solid var(--soft-line);
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.newsletter-form {
+  /* Formulario completo de suscripción: text, email, textarea y campos extra. */
+  padding: 34px;
+  background:
+    linear-gradient(180deg, rgba(249, 251, 249, 0.92), rgba(244, 248, 245, 0.96)),
+    var(--paper);
+  border: 1px solid rgba(31, 37, 35, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 18px 42px rgba(31, 37, 35, 0.12);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 22px;
+  margin-bottom: 22px;
+}
+
+.form-row {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-grid .form-row {
+  margin-bottom: 0;
+}
+
+.newsletter-form fieldset {
+  margin: 0 0 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.newsletter-form label,
+.newsletter-form legend {
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.newsletter-form legend {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.newsletter-form input,
+.newsletter-form select,
+.newsletter-form textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 15px;
+  border: 1px solid rgba(95, 115, 107, 0.2);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.newsletter-form input::placeholder,
+.newsletter-form textarea::placeholder {
+  color: rgba(102, 112, 108, 0.58);
+}
+
+.newsletter-form select {
+  appearance: none;
+  padding-right: 42px;
+  background-color: rgba(250, 252, 250, 0.88);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--accent) 50%),
+    linear-gradient(135deg, var(--accent) 50%, transparent 50%);
+  background-position:
+    calc(100% - 19px) 50%,
+    calc(100% - 13px) 50%;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+.newsletter-form select option {
+  background-color: #f4f8f5;
+  color: var(--ink);
+}
+
+.newsletter-form select option:checked {
+  background-color: rgba(95, 115, 107, 0.16);
+}
+
+.newsletter-form select:required:invalid {
+  color: rgba(102, 112, 108, 0.62);
+}
+
+.newsletter-form select:valid {
+  color: var(--ink);
+}
+
+.newsletter-form textarea {
+  min-height: 170px;
+  max-height: 320px;
+  resize: vertical;
+}
+
+.newsletter-form input:focus,
+.newsletter-form select:focus,
+.newsletter-form textarea:focus {
+  /* El foco visible ayuda a usar el formulario con teclado. */
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(95, 115, 107, 0.56);
+  box-shadow: 0 0 0 4px rgba(95, 115, 107, 0.12);
+  outline: none;
+}
+
+.newsletter-form input:not([type="radio"]):not([type="checkbox"]):invalid:not(:placeholder-shown),
+.newsletter-form textarea:invalid:not(:placeholder-shown) {
+  border-color: rgba(160, 69, 56, 0.68);
+  box-shadow: 0 0 0 3px rgba(160, 69, 56, 0.1);
+}
+
+.newsletter-form input:not([type="radio"]):not([type="checkbox"]):valid:not(:placeholder-shown),
+.newsletter-form textarea:valid:not(:placeholder-shown),
+.newsletter-form select:valid {
+  border-color: rgba(95, 115, 107, 0.42);
+}
+
+.frequency-options {
+  /* Los radios se estilizan con label para mantenerlos claros y clickeables. */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(95, 115, 107, 0.16);
+  border-radius: 8px;
+}
+
+.newsletter-form .choice-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0;
+}
+
+.newsletter-form .choice-row input {
+  width: auto;
+  min-height: 0;
+  margin-top: 4px;
+  accent-color: var(--accent);
+}
+
+.frequency-options .choice-row {
+  display: block;
+}
+
+.frequency-options .choice-row input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.newsletter-form input[type="checkbox"] {
+  /* Checkbox simple y estable; mantiene validación HTML con required. */
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  min-height: 0;
+  flex: 0 0 auto;
+  margin: 1px 0 0;
+  padding: 0;
+  display: grid;
+  place-content: center;
+  border: 2px solid rgba(95, 115, 107, 0.72);
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.newsletter-form input[type="checkbox"]::before {
+  content: "";
+  width: 11px;
+  height: 7px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  transform: rotate(-45deg) scale(0);
+}
+
+.newsletter-form input[type="checkbox"]:checked {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.newsletter-form input[type="checkbox"]:checked::before {
+  transform: rotate(-45deg) scale(1);
+}
+
+.newsletter-form input[type="checkbox"]:focus-visible {
+  outline: 3px solid rgba(95, 115, 107, 0.2);
+  outline-offset: 2px;
+}
+
+.newsletter-form .choice-row label {
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.frequency-options .choice-row label {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: rgba(247, 250, 247, 0.68);
+  cursor: pointer;
+}
+
+.frequency-options .choice-row label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border: 2px solid rgba(95, 115, 107, 0.72);
+  border-radius: 50%;
+  background: transparent;
+  background-clip: content-box;
+  padding: 3px;
+}
+
+.frequency-options .choice-row input:checked + label {
+  background: rgba(95, 115, 107, 0.14);
+  border-color: rgba(95, 115, 107, 0.28);
+}
+
+.frequency-options .choice-row input:checked + label::before {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.frequency-options .choice-row input:focus-visible + label {
+  outline: 3px solid rgba(95, 115, 107, 0.2);
+  outline-offset: 2px;
+}
+
+.newsletter-form .accept-row {
+  align-items: flex-start;
+  gap: 12px;
+  margin: 8px 0 22px;
+  padding-top: 0;
+}
+
+.newsletter-form .accept-row label {
+  max-width: 760px;
+  cursor: pointer;
+}
+
+.newsletter-form button {
+  width: 100%;
+  min-height: 48px;
+  padding: 11px 18px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 10px 26px rgba(53, 71, 65, 0.18);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.newsletter-form button:hover,
+.newsletter-form button:focus-visible {
+  background: #52655d;
+  outline: none;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 980px) {
+  .newsletter-intro,
+  .newsletter-signup {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-feature {
+    max-width: 620px;
+    margin-top: 0;
+  }
+
+  .newsletter-highlights {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .newsletter-intro {
+    gap: 28px;
+    padding-bottom: 28px;
+  }
+
+  .newsletter-copy {
+    padding-top: 30px;
+  }
+
+  .newsletter-copy h2,
+  .newsletter-panel h2 {
+    font-size: 2rem;
+  }
+
+  .newsletter-highlights {
+    gap: 18px;
+    padding: 28px 0 32px;
+  }
+
+  .newsletter-card {
+    padding: 22px 20px;
+  }
+
+  .newsletter-signup {
+    gap: 28px;
+    padding-top: 30px;
+  }
+
+  .newsletter-form {
+    padding: 22px 18px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .frequency-options {
+    grid-template-columns: 1fr;
+  }
+}
